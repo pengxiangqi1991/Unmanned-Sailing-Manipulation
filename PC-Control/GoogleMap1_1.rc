@@ -1,0 +1,285 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (中国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\GoogleMap1_1.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.chs\\afxres.rc""          // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\GoogleMap1_1.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 235, 55
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关于 GoogleMap1_1"
+FONT 9, "宋体"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "GoogleMap1_1 1.0 版",IDC_STATIC,40,10,119,8,SS_NOPREFIX
+    LTEXT           "版权所有 (C) 2013",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "确定",IDOK,178,7,50,14,WS_GROUP
+END
+
+IDD_GOOGLEMAP1_1_DIALOG DIALOGEX 0, 0, 678, 411
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "大连海事大学无人帆船监控"
+FONT 10, "宋体"
+BEGIN
+    CONTROL         "Custom",IDC_CUSTOM,"MFCMyWndClass",WS_TABSTOP,234,75,
+                    426,329
+    GROUPBOX        "谷歌地球",IDC_STATIC,229,60,442,344
+    PUSHBUTTON      "定位",IDC_BTN_POS,22,12,50,14
+    EDITTEXT        IDC_EDIT1,94,14,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT2,143,14,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT3,193,14,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT4,94,34,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT5,143,34,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT6,193,33,40,14,ES_AUTOHSCROLL
+    LTEXT           "Static",IDC_STATIC_LON1,57,118,25,8
+    LTEXT           "Static",IDC_STATIC_LON2,109,118,25,8
+    LTEXT           "Static",IDC_STATIC_LON3,161,120,25,8
+    LTEXT           "Static",IDC_STATIC_LAT1,56,106,25,8
+    LTEXT           "Static",IDC_STATIC_LAT2,109,105,25,8
+    LTEXT           "Static",IDC_STATIC_LAT3,161,105,25,8
+    LTEXT           "Static",IDC_STATIC_SLON,69,150,62,8
+    LTEXT           "Static",IDC_STATIC_SLAT,69,135,64,8
+    CONTROL         "",IDC_STATIC_BMP,"Static",SS_BITMAP | SS_CENTERIMAGE,21,
+                    210,73,73
+    LTEXT           "Static",IDC_STATIC_POS,77,193,25,8
+    GROUPBOX        "经纬度信息",IDC_STATIC,13,60,213,109
+    LTEXT           "纬度：",IDC_STATIC,21,73,23,8
+    LTEXT           "经度：",IDC_STATIC,21,90,23,8
+    LTEXT           "纬度 时：",IDC_STATIC,21,105,35,8
+    LTEXT           "分：",IDC_STATIC,91,105,16,8
+    LTEXT           "秒：",IDC_STATIC,145,105,16,8
+    LTEXT           "经度 时：",IDC_STATIC,21,118,35,8
+    LTEXT           "分：",IDC_STATIC,91,119,16,8
+    LTEXT           "秒：",IDC_STATIC,145,119,16,8
+    LTEXT           "换算后纬度：",IDC_STATIC,21,134,46,8
+    LTEXT           "换算后经度：",IDC_STATIC,21,148,46,8
+    GROUPBOX        "帆船姿态",IDC_STATIC,13,176,213,111
+    LTEXT           "帆船姿态信息：",IDC_STATIC,20,194,53,8
+    LTEXT           "服务器状态：",IDC_STATIC,292,19,46,8
+    LTEXT           "Static",IDC_STATIC_ADDR,348,19,170,8
+    CONTROL         "Radio1",IDC_RADIO1,"Button",BS_AUTORADIOBUTTON,21,332,
+                    40,10
+    CONTROL         "Radio2",IDC_RADIO2,"Button",BS_AUTORADIOBUTTON,68,332,
+                    40,10
+    CONTROL         "Radio3",IDC_RADIO3,"Button",BS_AUTORADIOBUTTON,117,332,
+                    40,10
+    PUSHBUTTON      "发送控制信息",IDC_BTN_SEND,115,351,50,14
+    GROUPBOX        "控制帆船",IDC_STATIC,13,292,212,112
+    LTEXT           "",IDC_STATIC_STRSEND,22,354,86,8
+    LTEXT           "发送状态：",IDC_STATIC,25,313,38,8
+    LTEXT           "Static",IDC_STATIC_TEXT,78,313,85,8
+    LTEXT           "Static",IDC_STATIC_RECV,244,33,427,8
+    LTEXT           "Static",IDC_LAT,46,73,97,8
+    LTEXT           "Static",IDC_LON,47,89,102,8
+    LTEXT           "Static",IDC_STATIC_DLAT3,188,105,35,8
+    LTEXT           "Static",IDC_STATIC_DLON3,189,120,36,8
+    PUSHBUTTON      "定位大连",IDC_BUTTON1,24,40,50,14
+    LTEXT           "Static",IDC_STATIC_POS2POS,245,46,426,8
+    LTEXT           "Static",IDC_STATIC_C,107,252,93,8
+    LTEXT           "Static",IDC_STATIC_D,107,267,98,8
+    LTEXT           "Static",IDC_STATIC_POSTURE,107,214,114,8
+    PUSHBUTTON      "姿态信息",IDC_BUTTON_POSTURE,163,191,50,14
+END
+
+IDD_DIALOG_POSTURE DIALOG DISCARDABLE  0, 0, 187, 96
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "对话"
+FONT 10, "System"
+BEGIN
+    LTEXT           "Static",IDC_STATIC_D_C,29,30,56,8
+    LTEXT           "Static",IDC_STATIC_D_D,29,51,56,8
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404B0"
+        BEGIN
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "GoogleMap1_1 Microsoft 基础类应用程序\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "GoogleMap1_1\0"
+            VALUE "LegalCopyright", "版权所有 (C) 2013\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "GoogleMap1_1.EXE\0"
+            VALUE "ProductName", "GoogleMap1_1 应用程序\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_GOOGLEMAP1_1_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 671
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 404
+    END
+
+    IDD_DIALOG_POSTURE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 89
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_BITMAP1             BITMAP  DISCARDABLE     "bmp\\位图测试1.bmp"
+IDB_BITMAP2             BITMAP  DISCARDABLE     "bmp\\位图测试2.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ABOUTBOX            "关于 GoogleMap1_1(&A)..."
+END
+
+#endif    // Chinese (中国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE 4, 2
+#pragma code_page(936)
+#endif //_WIN32
+#include "res\GoogleMap1_1.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.chs\afxres.rc"          // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
